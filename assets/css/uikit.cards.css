@@ -12164,12 +12164,6 @@ html {
     margin: -40px -40px 40px -40px
 }
 
-@media (min-width:768px) {
-    .tm-article-teaser {
-        margin: -70px -70px 70px -70px
-    }
-}
-
 .tm-container-small {
     max-width: 900px;
     margin: auto
@@ -12205,4 +12199,24 @@ html {
   .tm-sidebar {
     padding-left: inherit;
   }
+}
+@media (max-width: 960px) {
+  .tm-header {
+      display: flex;
+  }
+}
+@media (max-width: 960px) {
+  .tm-header {
+      flex-direction: row;
+  }
+  .uk-navbar {
+      display: flex;
+      position: inherit;
+      margin-left: auto;
+  }
+}
+
+.uk-width-1-4\@m.tm-sidebar.uk-flex-first\@m {
+    margin-right: 40px;
+    margin-left: -40px;
 }

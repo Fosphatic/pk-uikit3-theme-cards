@@ -18,7 +18,7 @@
                 <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                 <div class="tm-header uk-flex uk-flex-middle uk-flex-column">
 
-                    <a class="tm-logo uk-hidden@s" href="<?= $view->url()->get() ?>">
+                    <a class="tm-logo uk-hidden@m uk-navbar-item uk-logo" href="<?= $view->url()->get() ?>">
                         <?php if ($params['logo']) : ?>
                             <img src="<?= $this->escape($params['logo']) ?>" alt="">
                         <?php else : ?>
@@ -30,21 +30,21 @@
 
                         <?php if ($params['logo']) : ?>
                         <div class="tm-navbar-center">
-                        <a class="tm-logo uk-visible@s" href="<?= $view->url()->get() ?>">
+                        <a class="tm-logo uk-visible@m" href="<?= $view->url()->get() ?>">
                             <img class="uk-responsive-height" src="<?= $this->escape($params['logo']) ?>" alt="">
                         </a>
                         </div>
                         <?php endif ?>
 
                         <?php if ($view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
-                        <div class="uk-visible@s">
+                        <div class="uk-visible@m">
                             <?= $view->menu('main', 'menu-navbar.php') ?>
                             <?= $view->position('navbar', 'position-blank.php') ?>
                         </div>
                         <?php endif ?>
 
                         <?php if ($view->position()->exists('offcanvas') || $view->menu()->exists('offcanvas')) : ?>
-                        <div class="uk-hidden@s">
+                        <div class="uk-navbar-right uk-hidden@m">
                             <a href="#offcanvas-nav" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
                         </div>
                         <?php endif ?>
@@ -59,15 +59,15 @@
                 </section>
                 <?php endif; ?>
 
-                <div id="tm-main" class="tm-main uk-grid" data-uk-grid-match data-uk-grid-margin>
+                <div id="tm-main" class="tm-main" data-uk-grid data-uk-grid-margin>
                   <div class="uk-container uk-container-center">
-                    <div class="uk-grid-match" data-uk-grid data-uk-margin uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > main > article > div > * ; delay: 250; repeat: true">
+                    <div class="uk-grid uk-flex-center">
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                         <?= $view->render('content') ?>
                     </main>
 
                     <?php if ($view->position()->exists('sidebar')) : ?>
-                    <aside class="uk-width-1-4@m tm-sidebar <?= $params['sidebar_first'] ? 'uk-flex-first@m' : ''; ?>">
+                    <aside class="uk-width-1-4@m tm-sidebar <?= $params['sidebar_first'] ? 'uk-flex-first@m' : 'tm-sidebar'; ?>">
                         <?= $view->position('sidebar', 'position-sidebar-panel.php') ?>
                     </aside>
                     <?php endif ?>
