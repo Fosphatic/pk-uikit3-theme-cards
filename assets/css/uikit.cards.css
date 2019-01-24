@@ -12159,9 +12159,13 @@ html {
         padding-bottom: 50px
     }
 }
-
 .tm-article-teaser {
-    margin: -40px -40px 40px -40px
+    margin: -30px -30px 30px -30px
+}
+@media (min-width: 1200px) {
+  .tm-article-teaser {
+      margin: -40px -40px 40px -40px
+  }
 }
 
 .tm-container-small {
@@ -12188,11 +12192,13 @@ html {
   z-index: 990;
 }
 #tm-main {
-    padding-left: 60px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 @media (min-width: 1200px) {
   #tm-main {
-      padding-left: 80px;
+      padding-left: 40px;
+      padding-top: 40px;
   }
 }
 @media (max-width: 980px) {
@@ -12215,8 +12221,28 @@ html {
       margin-left: auto;
   }
 }
-
-.uk-width-1-4\@m.tm-sidebar.uk-flex-first\@m {
-    margin-right: 40px;
-    margin-left: -40px;
+@media (max-width: 960px) {
+  .uk-width-1-4\@m.tm-sidebar.uk-flex-first\@m {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .uk-width-1-4\@m.tm-sidebar.uk-flex-first\@m {
+    margin-right: 30px;
+    margin-left: -30px;
+  }
+}
+@media (min-width: 1200px) {
+    .uk-width-1-4\@m.tm-sidebar.uk-flex-first\@m {
+      margin-right: 40px;
+      margin-left: -40px;
+  }
+}
+#tm-bottom {
+    padding-top: 30px;
+}
+@media (min-width: 1200px) {
+  #tm-bottom {
+      padding-top: 40px;
+  }
 }

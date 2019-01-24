@@ -30,7 +30,9 @@
 
             </ul>
         </div>
-
+    <div class="tm-blog-space">
+      <hr class="uk-divider-icon">
+    </div>
     </article>
     <?php endforeach ?>
 
@@ -44,7 +46,7 @@
     ?>
 
     <?php if ($total > 1) : ?>
-    <ul class="uk-pagination uk-margin-bottom-remove <?= $params['contrast'] ? 'uk-contrast' : '' ?>">
+    <ul class="uk-pagination uk-flex-center uk-margin-bottom-remove <?= $params['contrast'] ? 'uk-contrast' : '' ?>">
 
 
         <?php for($i=1;$i<=$total;$i++): ?>

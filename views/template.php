@@ -54,14 +54,14 @@
                 <?php endif ?>
 
                 <?php if ($view->position()->exists('top')) : ?>
-                <section id="tm-top" class="tm-top uk-grid uk-grid-match" data-uk-grid-margin>
+                <section id="tm-top" class="tm-top">
                     <?= $view->position('top', 'position-grid.php') ?>
                 </section>
                 <?php endif; ?>
 
-                <div id="tm-main" class="tm-main" data-uk-grid data-uk-grid-margin>
+                <div id="tm-main" class="tm-main">
                   <div class="uk-container uk-container-center">
-                    <div class="uk-grid uk-flex-center">
+                    <div class="" data-uk-grid>
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                         <?= $view->render('content') ?>
                     </main>
@@ -78,7 +78,7 @@
                 </div>
 
                 <?php if ($view->position()->exists('bottom')) : ?>
-                <section id="tm-bottom" class="tm-bottom uk-grid uk-grid-match" data-uk-grid-margin>
+                <section id="tm-bottom" class="tm-bottom">
                     <?= $view->position('bottom', 'position-grid.php') ?>
                 </section>
                 <?php endif; ?>
