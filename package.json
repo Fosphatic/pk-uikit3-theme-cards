@@ -1,5 +1,10 @@
 {
-    "name": "pagekit-theme",
+    "name": "uikit3-theme-cards",
+    "version": "1.0.0",
+    "description": "UIkit 3 Theme Cards migrated.",
+    "author": "Sven Suchan <sven@suchan.me>",
+    "license": "MIT",
+    "private": true,
     "scripts": {
         "install": "bower install && gulp",
         "archive": "gulp && webpack -p && composer archive --format=zip"

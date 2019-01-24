@@ -1,5 +1,6 @@
+<div class="uk-grid-match" uk-grid>
 <?php foreach ($widgets as $widget) : ?>
-<div class="uk-width-medium-1-<?= count($widgets) ?>">
+<div class="uk-width-1-<?= count($widgets) ?>@m">
 
     <?php
 

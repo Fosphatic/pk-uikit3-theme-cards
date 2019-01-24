@@ -55,7 +55,7 @@
                 <?php else: ?>
                 <li>
                     <a href="<?= $view->url('@blog/page', ['page' => $i]) ?>"><?=$i?></a>
-                <li>
+                </li>
                 <?php endif; ?>
 
             <?php elseif($i==1): ?>

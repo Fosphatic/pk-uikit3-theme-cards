@@ -14,11 +14,11 @@
             <div class="uk-form-controls">
                 <select id="form-theme-title-size" class="uk-form-width-large" v-model="widget.theme.title_size">
                     <option value="uk-panel-title">{{ 'Default' | trans }}</option>
-                    <option value="uk-h1 uk-margin-top-remove">{{ 'H1' | trans }}</option>
-                    <option value="uk-h2 uk-margin-top-remove">{{ 'H2' | trans }}</option>
-                    <option value="uk-h3 uk-margin-top-remove">{{ 'H3' | trans }}</option>
-                    <option value="uk-h4 uk-margin-top-remove">{{ 'H4' | trans }}</option>
-                    <option value="uk-heading-large uk-margin-top-remove">Extra Large</option>
+                    <option value="uk-h1 uk-margin-remove-top">{{ 'H1' | trans }}</option>
+                    <option value="uk-h2 uk-margin-remove-top">{{ 'H2' | trans }}</option>
+                    <option value="uk-h3 uk-margin-remove-top">{{ 'H3' | trans }}</option>
+                    <option value="uk-h4 uk-margin-remove-top">{{ 'H4' | trans }}</option>
+                    <option value="uk-heading-large uk-margin-remove-top">Extra Large</option>
                 </select>
             </div>
         </div>
@@ -27,6 +27,13 @@
             <span class="uk-form-label">{{ 'Alignment' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
                 <label><input type="checkbox" v-model="widget.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
+            </div>
+        </div>
+
+        <div class="uk-form-row">
+            <span class="uk-form-label">{{ 'Sidebar' | trans }}</span>
+            <div class="uk-form-controls uk-form-controls-text">
+                <label><input type="checkbox" v-model="widget.theme.sidebar_margin"> {{ 'Set sidebar margin.' | trans }}</label>
             </div>
         </div>
 
@@ -42,10 +49,10 @@
             <div class="uk-form-controls">
                 <select id="form-theme-panel" class="uk-form-width-large" v-model="widget.theme.panel">
                     <option value="">{{ 'None' | json }}</option>
-                    <option value="uk-panel-box">{{ 'Box' | trans }}</option>
-                    <option value="uk-panel-box uk-panel-box-primary uk-contrast">{{ 'Box Primary' | trans }}</option>
-                    <option value="uk-panel-box uk-panel-box-secondary">{{ 'Box Secondary' | trans }}</option>
-                    <option value="uk-panel-header">{{ 'Header' | trans }}</option>
+                    <option value="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">{{ 'Default' | trans }}</option>
+                    <option value="uk-card uk-card-primary uk-card-body uk-box-shadow-hover-large">{{ 'Primary' | trans }}</option>
+                    <option value="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large">{{ 'Secondary' | trans }}</option>
+                    <option value="uk-card uk-card-hover uk-card-body">{{ 'Muted' | trans }}</option>
                 </select>
             </div>
         </div>

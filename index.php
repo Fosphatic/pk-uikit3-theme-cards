@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'theme-cards',
+    'name' => 'uikit3-theme-cards',
 
     'type' => 'theme',
 
@@ -65,6 +65,7 @@ return [
         'title_size' => 'uk-panel-title',
         'alignment' => '',
         'html_class' => '',
+        'sidebar_margin' => false,
         'panel' => 'uk-panel-box'
 
     ],

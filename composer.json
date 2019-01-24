@@ -3,13 +3,13 @@
     "type": "pagekit-theme",
     "version": "1.0.0",
     "title": "UIkit 3 Cards",
-    "description": "A great lifestyle theme to showcase images and start blogging.",
+    "description": "A great lifestyle theme to showcase images and start blogging with uikit3 support.",
     "license": "MIT",
     "copyright": "(c) 2016 Pagekit",
     "authors": [
         {
             "name": "Sven Suchan",
-            "email": "kontakt@suchan-webdesign.de",
+            "email": "sven@suchan.me",
             "homepage": "https://www.suchan-webdesign.de"
         }
     ],
