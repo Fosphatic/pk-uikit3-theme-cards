@@ -28,6 +28,11 @@
             <div class="uk-form-controls uk-form-controls-text">
                 <label><input type="checkbox" v-model="widget.theme.alignment"> {{ 'Center the title and content.' | trans }}</label>
             </div>
+            <span class="uk-form-label">{{ 'Invert Colors' | trans }}</span>
+            <div class="uk-form-controls uk-form-controls-text">
+                <label><input type="checkbox" v-model="widget.theme.contrast_alt_widgets"> {{ 'Invert colors' | trans }}</label>
+            </div>
+
         </div>
 
         <div class="uk-form-row">

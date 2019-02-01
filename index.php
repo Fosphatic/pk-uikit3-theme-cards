@@ -64,6 +64,7 @@ return [
         'title_hide' => false,
         'title_size' => 'uk-panel-title',
         'alignment' => '',
+        'contrast_alt_widgets' => '',
         'html_class' => '',
         'sidebar_margin' => false,
         'panel' => 'uk-panel-box'

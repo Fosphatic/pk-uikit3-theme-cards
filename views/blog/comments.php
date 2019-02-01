@@ -75,7 +75,7 @@
 
         <h2 class="uk-h4">{{ 'Leave a comment' | trans }}</h2>
 
-        <div class="uk-alert uk-alert-danger" v-show="error">{{ error }}</div>
+        <div class="uk-alert-danger" uk-alert v-show="error">{{ error }}</div>
 
         <form class="uk-form uk-form-stacked" v-if="user.canComment" v-validator="form" @submit.prevent="save | valid">
 
@@ -83,35 +83,35 @@
 
             <template v-else>
 
-                <div class="uk-form-row">
-                    <label for="form-name" class="uk-form-label">{{ 'Name' | trans }}</label>
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
                     <div class="uk-form-controls">
-                        <input id="form-name" class="uk-form-width-large" type="text" name="author" v-model="author" v-validate:required>
-
-                        <p class="uk-form-help-block uk-text-danger" v-show="form.author.invalid">{{ 'Name cannot be blank.' | trans }}</p>
+                        <input id="form-name" class="uk-input uk-form-width-large" placeholder="Name" type="text" name="author" v-model="author" v-validate:required>
                     </div>
+                  </div>
                 </div>
 
-                <div class="uk-form-row">
-                    <label for="form-email" class="uk-form-label">{{ 'Email' | trans }}</label>
+                  <div class="uk-alert-danger" uk-alert v-show="form.author.invalid">{{ 'Name cannot be blank.' | trans }}</div>
+
+
+                <div class="uk-margin">
+                  <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
                     <div class="uk-form-controls">
-                        <input id="form-email" class="uk-form-width-large" type="email" name="email" v-model="email" v-validate:email>
-
-                        <p class="uk-form-help-block uk-text-danger" v-show="form.email.invalid">{{ 'Email invalid.' | trans }}</p>
+                        <input id="form-email" class="uk-input uk-form-width-large" placeholder="E-Mail" type="email" name="email" v-model="email" v-validate:email>
                     </div>
+                  </div>
                 </div>
-
+                <div class="uk-alert-danger" uk-alert v-show="form.email.invalid">{{ 'Email invalid.' | trans }}</div>
             </template>
 
-            <div class="uk-form-row">
-                <label for="form-comment" class="uk-form-label">{{ 'Comment' | trans }}</label>
+            <div class="uk-margin">
                 <div class="uk-form-controls">
-                    <textarea id="form-comment" class="uk-form-width-large" name="content" rows="10" v-model="content" v-validate:required></textarea>
-
-                    <p class="uk-form-help-block uk-text-danger" v-show="form.content.invalid">{{ 'Comment cannot be blank.' | trans }}</p>
+                    <textarea id="form-comment" class="uk-textarea uk-form-width-large" placeholder="{{ 'Comment' | trans }}" name="content" rows="10" v-model="content" v-validate:required></textarea>
                 </div>
             </div>
-
+            <div class="uk-alert-danger" uk-alert v-show="form.content.invalid">{{ 'Comment cannot be blank.' | trans }}</div>
             <p>
                 <button class="uk-button uk-button-primary" type="submit" accesskey="s">{{ 'Submit' | trans }}</button>
                 <button class="uk-button" accesskey="c" v-if="parent" @click.prevent="cancel">{{ 'Cancel' | trans }}</button>

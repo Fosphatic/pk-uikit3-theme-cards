@@ -55,7 +55,7 @@
 
                 <?php if ($view->position()->exists('top')) : ?>
                 <section id="tm-top" class="tm-top">
-                    <?= $view->position('top', 'position-grid.php') ?>
+                    <?= $view->position('top', 'position-cards.php') ?>
                 </section>
                 <?php endif; ?>
 
@@ -79,7 +79,7 @@
 
                 <?php if ($view->position()->exists('bottom')) : ?>
                 <section id="tm-bottom" class="tm-bottom">
-                    <?= $view->position('bottom', 'position-grid.php') ?>
+                    <?= $view->position('bottom', 'position-cards.php') ?>
                 </section>
                 <?php endif; ?>
 

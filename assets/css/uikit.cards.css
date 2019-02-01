@@ -12044,7 +12044,7 @@ iframe.uk-cover {
   }
 }
 /* ========================================================================
-   UIKIT3 Theme Minimal Changes
+   UIKit 3 Theme Cards modifications
  ========================================================================== */
 .uk-tooltip.uk-active {
     opacity: 1
@@ -12057,12 +12057,10 @@ iframe.uk-cover {
 html {
     overflow-y: scroll
 }
-
 .tm-background {
     padding-bottom: 25px;
     background-attachment: fixed
 }
-
 @media (min-width:768px) {
     .tm-background {
         padding-top: 50px;
@@ -12243,4 +12241,19 @@ html {
   #tm-bottom {
       padding-top: 40px;
   }
+}
+.uk-button {
+  border: 1px solid;
+}
+.uk-panel.uk-contrast.uk-panel.uk-contrast h1,.uk-panel.uk-contrast h2,.uk-panel.uk-contrast h3,.uk-panel.uk-contrast h4,.uk-panel.uk-contrast h5,.uk-panel.uk-contrast h6, .uk-panel.uk-contrast p, .uk-panel.uk-contrast a {
+    color: #fff;
+}
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h1, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h2, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h3, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h4, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h5, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h6 {
+    color: #333;
+}
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a {
+    color: #333;
+}
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a:hover {
+    color: #0f6ecd;
 }

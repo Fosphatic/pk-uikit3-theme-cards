@@ -1,6 +1,6 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 
-<div class="tm-container-small">
+<div class="uk-container">
 
     <article class="uk-article">
 
@@ -11,7 +11,7 @@
         <h1 class="uk-article-title"><?= $post->title ?></h1>
 
         <p class="uk-article-meta">
-            <?= __('Written by %name% on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
+            <?= __('Written on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
         </p>
 
         <div class="uk-margin"><?= $post->content ?></div>
