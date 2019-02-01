@@ -95,15 +95,18 @@ return [
 
         'view.system/site/admin/settings' => function ($event, $view) use ($app) {
             $view->script('site-theme', 'theme:app/bundle/site-theme.js', 'site-settings');
+            $view->script('site-about', 'theme:app/bundle/site-about.js', 'site-settings');
             $view->data('$theme', $this);
         },
 
         'view.system/site/admin/edit' => function ($event, $view) {
             $view->script('node-theme', 'theme:app/bundle/node-theme.js', 'site-edit');
+            $view->script('info-node' , 'theme:app/bundle/info-node.js' , 'site-edit');
         },
 
         'view.system/widget/edit' => function ($event, $view) {
             $view->script('widget-theme', 'theme:app/bundle/widget-theme.js', 'widget-edit');
+            $view->script('widget-about' , 'theme:app/bundle/widget-about.js' , 'widget-edit');
         },
 
         /**

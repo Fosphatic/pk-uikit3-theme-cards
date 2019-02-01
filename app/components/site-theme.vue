@@ -37,7 +37,6 @@
                 <p class="uk-form-help-block">{{ 'Select a default background image for all pages.' | trans }}</p>
             </div>
         </div>
-
     </div>
 
 </template>
