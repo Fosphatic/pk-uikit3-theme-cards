@@ -1,9 +1,9 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
 
-<div class="tm-container">
+<div class="tm-container-small uk-light">
 
     <?php foreach ($posts as $post) : ?>
-    <article class="uk-article">
+    <article class="uk-article uk-background-primary">
 
         <?php if ($image = $post->get('image.src')): ?>
         <a class="tm-article-teaser uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></a>

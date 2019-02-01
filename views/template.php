@@ -13,7 +13,7 @@
     <body>
 
         <div class="tm-background uk-background-cover" <?= $params['image'] ? "class=\"uk-background-cover\" style=\"background-image: url('{$view->url($params['image'])}');\"" : '' ?>>
-            <div class="uk-container uk-container-center">
+            <div class="uk-container uk-container-small uk-container-center">
 
                 <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                 <div class="tm-header uk-flex uk-flex-middle uk-flex-column">
@@ -54,14 +54,14 @@
                 <?php endif ?>
 
                 <?php if ($view->position()->exists('top')) : ?>
-                <section id="tm-top" class="tm-top">
+                <section id="tm-top" class="tm-top uk-margin-medium-bottom">
                     <?= $view->position('top', 'position-cards.php') ?>
                 </section>
                 <?php endif; ?>
 
                 <div id="tm-main" class="tm-main">
-                  <div class="uk-container uk-container-center">
-                    <div class="" data-uk-grid>
+
+                    <div class="" data-uk-grid uk-height-viewport="expand: true">
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                         <?= $view->render('content') ?>
                     </main>
@@ -72,9 +72,6 @@
                     </aside>
                     <?php endif ?>
                     </div>
-
-                  </div>
-
                 </div>
 
                 <?php if ($view->position()->exists('bottom')) : ?>

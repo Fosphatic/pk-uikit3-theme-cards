@@ -12156,11 +12156,11 @@ html {
     }
 }
 .tm-article-teaser {
-    margin: -30px -30px 30px -30px
+    margin: -40px -40px 40px -40px
 }
 @media (min-width: 1200px) {
   .tm-article-teaser {
-      margin: -40px -40px 40px -40px
+      margin: -70px -70px 70px -70px
   }
 }
 
@@ -12186,16 +12186,6 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 990;
-}
-#tm-main {
-    padding-left: 30px;
-    padding-top: 30px;
-}
-@media (min-width: 1200px) {
-  #tm-main {
-      padding-left: 40px;
-      padding-top: 40px;
-  }
 }
 @media (max-width: 980px) {
   .tm-sidebar {
@@ -12256,4 +12246,80 @@ html {
 }
 .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a:hover {
     color: #0f6ecd;
+}
+.uk-article:before,.uk-article:after,.pk-user:before,.pk-user:after {
+ content:"";
+ display:table
+}
+.uk-article:after,.pk-user:after {
+ clear:both
+}
+.uk-article>:last-child,.pk-user>:last-child {
+ margin-bottom:0
+}
+.uk-article+.uk-article,.pk-user+.pk-user {
+ margin-top:25px
+}
+.uk-article-title {
+ font-size:38px;
+ line-height:46px;
+ font-weight:300;
+ text-transform:none
+}
+.uk-article-title a {
+ color:inherit;
+ text-decoration:none
+}
+.uk-article-meta {
+ font-size:14px;
+ line-height:20px;
+ color:#A5A5A5
+}
+.uk-article-meta a {
+ color:#A5A5A5
+}
+.uk-article-meta a:hover {
+ color:#222;
+ text-decoration:none
+}
+.uk-article-lead {
+ color:#222;
+ font-size:16px;
+ line-height:26px;
+ font-weight:300;
+ font-style:italic
+}
+.uk-article-divider {
+ margin-bottom:35px;
+ border-color:#EEEEEE
+}
+*+.uk-article-divider {
+ margin-top:35px
+}
+.uk-article,.pk-user {
+ padding:40px;
+}
+@media (min-width:768px) {
+ .uk-article,.pk-user {
+  padding:70px
+ }
+ .uk-article+.uk-article,.pk-user+.pk-user {
+  margin-top:45px
+ }
+ .uk-article-title {
+  font-size:42px;
+  line-height:48px
+ }
+}
+.uk-article-title a:hover {
+ color:#A5A5A5
+}
+.uk-article .uk-subnav,.pk-user .uk-subnav {
+ font-style:italic
+}
+.uk-article .uk-subnav a:hover,.uk-article .uk-subnav a:focus,.pk-user .uk-subnav a:hover,.pk-user .uk-subnav a:focus {
+ text-decoration:underline
+}
+#tm-top, #tm-bottom {
+    margin-left: -40px;
 }

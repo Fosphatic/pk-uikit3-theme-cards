@@ -1,8 +1,8 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 
-<div class="uk-container">
+<div class="uk-container uk-container-small uk-light">
 
-    <article class="uk-article">
+    <article class="uk-article uk-background-primary">
 
         <?php if ($image = $post->get('image.src')): ?>
         <div class="tm-article-teaser uk-display-block"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></div>
