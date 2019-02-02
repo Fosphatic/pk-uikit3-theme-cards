@@ -27,4 +27,6 @@ return [
     'Extra Large'                                                                                                                                                                                                   => 'Extra groß',
     'Set sidebar margin.'                                                                                                                                                                                           => 'Sidebar Zwischenraum vor dem zweiten Element',
     'Hide Title'                                                                                                                                                                                                    => 'Titel Verstecken',
+    'Center the title and content.'                                                                                                                                                                                 => 'Zentriere Titel und Inhalt',
+    'Visibility'                                                                                                                                                                                                    => 'Sichtbarkeit',
 ];

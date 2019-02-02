@@ -30,7 +30,7 @@
             </div>
             <span class="uk-form-label">{{ 'Invert Colors' | trans }}</span>
             <div class="uk-form-controls uk-form-controls-text">
-                <label><input type="checkbox" v-model="widget.theme.contrast_alt_widgets"> {{ 'Invert colors' | trans }}</label>
+                <label><input type="checkbox" v-model="widget.theme.contrast_alt_widgets"> {{ 'Invert Colors' | trans }}</label>
             </div>
 
         </div>

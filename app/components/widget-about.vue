@@ -44,7 +44,7 @@
 
         section: {
             label: 'About',
-            priority: 90
+            priority: 100
         },
 
         props: ['widget', 'config']

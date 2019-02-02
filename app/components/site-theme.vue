@@ -31,7 +31,7 @@
             <label class="uk-form-label">{{ 'Background Image' | trans }}</label>
             <div class="uk-form-controls uk-form-controls-text">
                 <p class="uk-form-controls-condensed">
-                    <label><input type="checkbox" v-model="config.contrast"> {{ 'Invert colors' | trans }}</label>
+                    <label><input type="checkbox" v-model="config.contrast"> {{ 'Invert Colors' | trans }}</label>
                 </p>
                 <p class="uk-form-controls-condensed uk-form-width-large"><input-image :source.sync="config.image"></input-image></p>
                 <p class="uk-form-help-block">{{ 'Select a default background image for all pages.' | trans }}</p>
