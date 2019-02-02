@@ -12327,9 +12327,12 @@ html {
 .uk-article .uk-subnav a:hover,.uk-article .uk-subnav a:focus,.pk-user .uk-subnav a:hover,.pk-user .uk-subnav a:focus {
  text-decoration:underline
 }
-#tm-top, #tm-bottom {
-    margin-left: -40px;
-}
 .tm-padding {
     padding-top: 50px;
+}
+#tm-main {
+    margin-left: 30px;
+}
+.tm-article {
+  margin-left: -30px;
 }

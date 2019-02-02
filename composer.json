@@ -1,7 +1,7 @@
 {
     "name": "fosphatic/uikit3-theme-cards",
     "type": "pagekit-theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "UIkit 3 Cards",
     "description": "A great lifestyle theme to showcase images and start blogging with uikit3 support.",
     "license": "MIT",

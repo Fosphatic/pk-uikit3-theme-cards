@@ -1,6 +1,6 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
 
-<div class="<?= $params['container_width'] ?>">
+<div class="<?= $params['container_width'] ?> tm-article">
 
     <?php foreach ($posts as $post) : ?>
     <article class="uk-article <?= $params['blog_background'] ?>">

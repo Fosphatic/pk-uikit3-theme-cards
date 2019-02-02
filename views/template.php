@@ -61,7 +61,7 @@
 
                 <div id="tm-main" class="tm-main">
 
-                    <div class="tm-article" uk-height-viewport="expand: true">
+                    <div class="uk-grid" uk-margin uk-height-viewport="expand: true">
                     <div class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                         <?= $view->render('content') ?>
                     </div>

@@ -2,7 +2,7 @@
 
 <div class="<?= $params['container_width'] ?>">
 
-    <article class="uk-article <?= $params['blog_background'] ?>">
+    <article class="uk-article tm-article <?= $params['blog_background'] ?>">
 
         <?php if ($image = $post->get('image.src')): ?>
         <div class="tm-article-teaser uk-display-block"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></div>
