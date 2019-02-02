@@ -1,10 +1,10 @@
 # Changelog
 
-## 1.0.1 (June 30, 2016)
+## 1.0.1 (February 02, 2019)
 
 ### Removed
-- Removed system messages
+- Small bugfix on margin left in the blog section
 
-## 1.0.0 (April 7, 2016)
+## 1.0.0 (February 02, 2019)
 
 - Initial release
