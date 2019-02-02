@@ -29,4 +29,5 @@ return [
     'Hide Title'                                                                                                                                                                                                    => 'Titel Verstecken',
     'Center the title and content.'                                                                                                                                                                                 => 'Zentriere Titel und Inhalt',
     'Visibility'                                                                                                                                                                                                    => 'Sichtbarkeit',
+    'Blog Panel Style'                                                                                                                                                                                                    => 'Blog Panel Stil',
 ];

@@ -12297,14 +12297,14 @@ html {
  margin-top:35px
 }
 @media (min-width:768px) {
- .uk-article,.pk-user {
-  padding:40px
- }
+   .uk-article,.pk-user {
+    padding:40px
+   }
+}
  @media (min-width:1200px) {
    .uk-article,.pk-user {
   padding:70px
   }
-}
  .uk-article+.uk-article,.pk-user+.pk-user {
   margin-top:45px
  }
