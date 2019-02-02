@@ -12158,6 +12158,11 @@ html {
 .tm-article-teaser {
     margin: -30px -30px 30px -30px
 }
+@media (min-width: 768px) {
+  .tm-article-teaser {
+      margin: -40px -40px 40px -40px
+  }
+}
 @media (min-width: 1200px) {
   .tm-article-teaser {
       margin: -70px -70px 70px -70px
