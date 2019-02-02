@@ -3,7 +3,7 @@
 <div class="<?= $params['container_width'] ?> uk-light">
 
     <?php foreach ($posts as $post) : ?>
-    <article class="uk-article uk-background-primary">
+    <article class="uk-article">
 
         <?php if ($image = $post->get('image.src')): ?>
         <a class="tm-article-teaser uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></a>
@@ -15,7 +15,7 @@
             <?= __('Written on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
         </p>
 
-        <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
+        <div class="uk-margin <?= $params['background'] ?>"><?= $post->excerpt ?: $post->content ?></div>
 
         <div class="uk-margin-large-top">
             <ul class="uk-subnav">
