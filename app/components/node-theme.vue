@@ -82,10 +82,10 @@
             <div class="uk-form-controls">
                 <select id="form-theme-background" class="uk-form-width-large" v-model="node.theme.blog_background">
                     <option value="">{{ 'None' | json }}</option>
-                    <option value="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">{{ 'Default' | trans }}</option>
-                    <option value="uk-card uk-card-primary uk-card-body uk-box-shadow-hover-large">{{ 'Primary' | trans }}</option>
-                    <option value="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large">{{ 'Secondary' | trans }}</option>
-                    <option value="uk-card uk-card-hover uk-card-body">{{ 'Muted' | trans }}</option>
+                    <option value="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large uk-dark">{{ 'Default' | trans }}</option>
+                    <option value="uk-card uk-card-primary uk-card-body uk-box-shadow-hover-large uk-light">{{ 'Primary' | trans }}</option>
+                    <option value="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large uk-light">{{ 'Secondary' | trans }}</option>
+                    <option value="uk-card uk-card-hover uk-card-body uk-dark">{{ 'Muted' | trans }}</option>
                 </select>
             </div>
         </div>
