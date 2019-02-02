@@ -12296,8 +12296,10 @@ html {
 *+.uk-article-divider {
  margin-top:35px
 }
-.uk-article,.pk-user {
- padding:40px;
+@media (min-width:1024px) {
+  .uk-article,.pk-user {
+   padding:40px;
+  }
 }
 @media (min-width:768px) {
  .uk-article,.pk-user {
@@ -12325,7 +12327,4 @@ html {
 }
 .tm-padding {
     padding-top: 50px;
-}
-#tm-main {
-    margin-left: 30px;
 }

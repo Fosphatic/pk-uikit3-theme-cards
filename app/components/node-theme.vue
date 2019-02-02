@@ -56,7 +56,7 @@
             <label for="form-theme-panel" class="uk-form-label">{{ 'Panel Style' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-theme-background" class="uk-form-width-large" v-model="node.theme.background">
-                    <option value="">{{ 'None' | json }}</option>
+                    <option value="">{{ 'None' | trans }}</option>
                     <option value="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">{{ 'Default' | trans }}</option>
                     <option value="uk-card uk-card-primary uk-card-body uk-box-shadow-hover-large">{{ 'Primary' | trans }}</option>
                     <option value="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large">{{ 'Secondary' | trans }}</option>
@@ -69,7 +69,7 @@
             <label for="form-theme-panel" class="uk-form-label">{{ 'Container Width' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-theme-background" class="uk-form-width-large" v-model="node.theme.container_width">
-                    <option value="uk-container-xsmall">{{ 'Xsmall' | trans }}</option>
+                    <option value="uk-container-xsmall">{{ 'Extra small' | trans }}</option>
                     <option value="uk-container-small">{{ 'Small' | trans }}</option>
                     <option value="">{{ 'Normal' | trans }}</option>
                     <option value="uk-container-large">{{ 'Large' | trans }}</option>
@@ -81,7 +81,7 @@
             <label for="form-theme-panel" class="uk-form-label">{{ 'Blog Panel Style' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-theme-background" class="uk-form-width-large" v-model="node.theme.blog_background">
-                    <option value="">{{ 'None' | json }}</option>
+                    <option value="">{{ 'None' | trans }}</option>
                     <option value="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large uk-dark">{{ 'Default' | trans }}</option>
                     <option value="uk-card uk-card-primary uk-card-body uk-box-shadow-hover-large uk-light">{{ 'Primary' | trans }}</option>
                     <option value="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large uk-light">{{ 'Secondary' | trans }}</option>

@@ -53,7 +53,7 @@ return [
         'image_alt' => '',
         'contrast_alt' => '',
         'background' => 'uk-card uk-card-default uk-card-body uk-box-shadow-hover-large',
-        'blog_background' => 'uk-card uk-card-default uk-card-body uk-box-shadow-hover-large',
+        'blog_background' => 'uk-card uk-card-default uk-card-body uk-box-shadow-hover-large uk-dark',
         'container_width' => 'uk-container-small'
 
 
