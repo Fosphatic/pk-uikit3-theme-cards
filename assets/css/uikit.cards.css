@@ -12078,11 +12078,11 @@ html {
 .tm-header {
     margin-bottom: 35px
 }
-
-.tm-logo {
-    margin-bottom: 10px
+@media (min-width:960px) {
+  .tm-logo {
+      padding-bottom: 25px
+  }
 }
-
 @media (max-width:767px) {
     .tm-header {
         display: block;

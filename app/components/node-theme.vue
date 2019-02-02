@@ -65,6 +65,18 @@
             </div>
         </div>
 
+        <div class="uk-form-row">
+            <label for="form-theme-panel" class="uk-form-label">{{ 'Container Width' | trans }}</label>
+            <div class="uk-form-controls">
+                <select id="form-theme-background" class="uk-form-width-large" v-model="node.theme.container_width">
+                    <option value="uk-container-xsmall">{{ 'Xsmall' | trans }}</option>
+                    <option value="uk-container-small">{{ 'Small' | trans }}</option>
+                    <option value="">{{ 'Normal' | trans }}</option>
+                    <option value="uk-container-large">{{ 'Large' | trans }}</option>
+                </select>
+            </div>
+        </div>
+
     </div>
 
 </template>

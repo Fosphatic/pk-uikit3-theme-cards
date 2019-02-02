@@ -1,6 +1,6 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 
-<div class="uk-container uk-container-small uk-light">
+<div class="<?= $params['container_width'] ?> uk-light">
 
     <article class="uk-article uk-background-primary">
 

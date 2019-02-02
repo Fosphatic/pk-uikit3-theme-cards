@@ -52,6 +52,8 @@ return [
         'sidebar_first' => false,
         'image_alt' => '',
         'contrast_alt' => '',
+        'background' => 'uk-card',
+        'container_width' => 'uk-container-small'
 
 
     ],

@@ -13,7 +13,7 @@
     <body>
 
         <div class="tm-background uk-background-cover" <?= $params['image'] ? "class=\"uk-background-cover\" style=\"background-image: url('{$view->url($params['image'])}');\"" : '' ?>>
-            <div class="uk-container uk-container-small uk-container-center">
+            <div class="uk-container <?= $params['container_width'] ?> uk-container-center">
 
                 <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                 <div class="tm-header uk-flex uk-flex-middle uk-flex-column">
@@ -29,7 +29,7 @@
                     <nav class="uk-navbar <?= ($params['contrast']) ? 'tm-navbar-contrast' : '' ?>" data-uk-navbar>
 
                         <?php if ($params['logo']) : ?>
-                        <div class="tm-navbar-center">
+                        <div class="tm-navbar-center tm-logo">
                         <a class="tm-logo uk-visible@m" href="<?= $view->url()->get() ?>">
                             <img class="uk-responsive-height" src="<?= $this->escape($params['logo']) ?>" alt="">
                         </a>
