@@ -61,10 +61,10 @@
 
                 <div id="tm-main" class="tm-main">
 
-                    <div class="" data-uk-grid uk-height-viewport="expand: true">
-                    <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
+                    <div class="tm-article" uk-height-viewport="expand: true">
+                    <div class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                         <?= $view->render('content') ?>
-                    </main>
+                    </div>
 
                     <?php if ($view->position()->exists('sidebar')) : ?>
                     <aside class="uk-width-1-4@m tm-sidebar <?= $params['sidebar_first'] ? 'uk-flex-first@m' : 'tm-sidebar'; ?>">
@@ -89,7 +89,7 @@
 
 
                 <?= $view->position('footer', 'position-footer.php') ?>
-                
+
 
             </div>
         </div>

@@ -12156,7 +12156,7 @@ html {
     }
 }
 .tm-article-teaser {
-    margin: -40px -40px 40px -40px
+    margin: -30px -30px 30px -30px
 }
 @media (min-width: 1200px) {
   .tm-article-teaser {
@@ -12296,15 +12296,15 @@ html {
 *+.uk-article-divider {
  margin-top:35px
 }
-@media (min-width:1024px) {
-  .uk-article,.pk-user {
-   padding:40px;
-  }
-}
 @media (min-width:768px) {
  .uk-article,.pk-user {
-  padding:70px
+  padding:40px
  }
+ @media (min-width:1200px) {
+   .uk-article,.pk-user {
+  padding:70px
+  }
+}
  .uk-article+.uk-article,.pk-user+.pk-user {
   margin-top:45px
  }
