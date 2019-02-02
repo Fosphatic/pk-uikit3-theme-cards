@@ -37,7 +37,7 @@
                         <?php endif ?>
 
                         <?php if ($view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
-                        <div class="uk-visible@m">
+                        <div class="uk-visible@m tm-padding">
                             <?= $view->menu('main', 'menu-navbar.php') ?>
                             <?= $view->position('navbar', 'position-blank.php') ?>
                         </div>
@@ -87,9 +87,9 @@
         <div id="tm-footer" class="tm-footer uk-block uk-block-default">
             <div class="uk-container uk-container-center">
 
-                <section class="uk-grid uk-grid-match" data-uk-grid-margin>
-                <?= $view->position('footer', 'position-grid.php') ?>
-                </section>
+
+                <?= $view->position('footer', 'position-footer.php') ?>
+                
 
             </div>
         </div>

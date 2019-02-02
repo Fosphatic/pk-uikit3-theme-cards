@@ -52,7 +52,7 @@ return [
         'sidebar_first' => false,
         'image_alt' => '',
         'contrast_alt' => '',
-        'background' => 'uk-card',
+        'background' => 'uk-card uk-card-default uk-card-body uk-box-shadow-hover-large',
         'container_width' => 'uk-container-small'
 
 
